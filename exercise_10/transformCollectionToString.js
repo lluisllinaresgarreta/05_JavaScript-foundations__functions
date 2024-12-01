@@ -17,3 +17,16 @@
  * input: []
  * output: ""
  */
+
+/**
+ * transform collection into string
+ * @param {Array} collection - collection of elements 
+ * @returns {String} - collection as string joined by '|'
+ */
+function transformCollectionToString(collection) {
+    if (collection.length) {
+        return collection.join(' | ');
+    }
+    return '';
+}
+export default transformCollectionToString;
